@@ -1,0 +1,36 @@
+main {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#oAutoru {
+    border: 5px solid black;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    padding: 5px;
+}
+
+footer {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    margin-right: 25px;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}

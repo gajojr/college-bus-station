@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index-style.css">
+    <title>Rezervacija autobuskih karata</title>
+</head>
+
+<body>
+    <main>
+        <form id="rezervacija">
+            <caption>Rezervisi sediste:</caption>
+            <label>
+                Broj sedista:
+                <input type="number" required name="brojSedista" min="2" max="52">
+            </label>
+            <label>
+                Ime i prezime:
+                <input type="text" required name="imeIPrezime">
+            </label>
+            <label>
+                Email:
+                <input type="email" required name="email">
+            </label>
+            <button id="submitReservation">Submit</button>
+        </form>
+        <section id="sedista"></section>
+    </main>
+    <footer>
+        <a href="./o-autoru.html">O Autoru</a>
+        <a href="./uputstvo.html">Uputstvo</a>
+    </footer>
+    <script src="./src/code.js"></script>
+</body>
+
+</html>

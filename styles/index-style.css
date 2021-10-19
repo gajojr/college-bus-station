@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 97vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#rezervacija {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 5px;
+}
+
+#submitReservation {
+    width: fit-content;
+    padding: 5px;
+}
+
+#submitReservation:hover {
+    cursor: pointer;
+}
+
+#sedista {
+    margin-top: 10px;
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.red-u-busu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sediste {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+footer {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    margin-right: 25px;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
