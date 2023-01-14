@@ -13,12 +13,13 @@ for (let i = 1; i < 53; i++) {
     $article.id = i;
     $article.classList.add('sediste');
     $article.textContent = i;
-    // pogledaj u localStorage da li je sediste vec rezervisano, localStorage  
-    // simulira bazu podataka
+    // pogledaj u localStorage da li je sediste vec rezervisano  
+    // localStorage simulira bazu podataka
     if (localStorage.getItem(i) !== null) {
-        $article.style.backgroundColor = 'red';
+        $article.style.backgroundColor = '#0D38DD';
+        $article.style.textDecoration = 'line-through';
     } else {
-        $article.style.backgroundColor = 'green';
+        $article.style.backgroundColor = '#4267F4';
     }
     // dodamo sediste u red
     $red.append($article);
@@ -39,7 +40,7 @@ for (let i = 1; i < 53; i++) {
 }
 
 // vizuelno prikazi da je sediste 1 drukacije(vozacevo)
-document.getElementById(1).style.backgroundColor = 'rgba(5, 197, 13, 0.9)';
+document.getElementById(1).style.backgroundColor = '#DDB20D';
 document.getElementById(1).innerText = '1 (vozac)';
 
 document.getElementById('rezervacija').addEventListener('submit', e => {
@@ -53,7 +54,8 @@ document.getElementById('rezervacija').addEventListener('submit', e => {
         const imeIPrezime = e.target.imeIPrezime.value;
         const email = e.target.email.value;
 
-        document.getElementById(brojSedista).style.backgroundColor = 'red';
+        document.getElementById(brojSedista).style.backgroundColor = '#0D38DD';
+        document.getElementById(brojSedista).style.textDecoration = 'line-through';
         localStorage.setItem(brojSedista, JSON.stringify({ imeIPrezime, email }));
         alert(`Sediste broj ${brojSedista} je rezervisano na vase ime.`);
     }

@@ -10,17 +10,9 @@ main {
     width: 40vw;
     font-size: 1.25rem;
     border-radius: 10px;
-    background-color: grey;
+    background-color: #0D38DD;
     color: white;
     box-shadow: 2px 2px #000;
-}
-
-footer {
-    padding: 5px;
-    border-radius: 10px;
-    background-color: grey;
-    display: flex;
-    flex-direction: row;
 }
 
 a {

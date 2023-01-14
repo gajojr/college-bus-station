@@ -5,11 +5,11 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 97vh;
 }
 
 main {
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
 }
@@ -24,8 +24,13 @@ label {
 }
 
 #submitReservation {
+    background-color: #4285F4;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
     width: fit-content;
     padding: 5px;
+    border-radius: 10px;
 }
 
 #submitReservation:hover {
@@ -33,7 +38,7 @@ label {
 }
 
 #sedista {
-    margin-top: 10px;
+    margin-top: 20px;
     width: 99vw;
     display: flex;
     flex-direction: column;
@@ -55,17 +60,8 @@ label {
     border: 1px solid black;
 }
 
-footer {
-    padding: 5px;
-    border-radius: 10px;
-    background-color: grey;
-    display: flex;
-    flex-direction: row;
-}
-
 a {
     margin-right: 25px;
-    text-decoration: none;
 }
 
 a:visited {

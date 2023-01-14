@@ -1,0 +1,42 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #4285F4;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>ul {
+    list-style: none;
+    display: flex;
+}
+
+nav>ul>li {
+    margin-right: 20px;
+    transition: all .7s ease;
+}
+
+li:hover {
+    transform: scale(1.2);
+}
+
+li>a {
+    color: #fff;
+}
+
+footer {
+    background-color: #4285F4;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}

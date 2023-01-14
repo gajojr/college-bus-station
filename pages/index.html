@@ -5,11 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/index-style.css">
+    <link rel="stylesheet" href="../styles/utils.css">
+    <link rel="stylesheet" href="../styles/index-style.css">
     <title>Rezervacija autobuskih karata</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Pocetna</a></li>
+                <li><a href="./lokacija.html">Lokacija</a></li>
+                <li><a href="./red-voznje.html">Red voznje</a></li>
+                <li><a href="./o-autoru.html">Autori</a></li>
+                <li><a href="./uputstvo.html">Uputstvo</a></li>
+                <li><a href="./bus-detector.html">AI</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
         <form id="rezervacija">
             <caption>Rezervisi sediste:</caption>
@@ -25,15 +40,14 @@
                 Email:
                 <input type="email" required name="email">
             </label>
-            <button id="submitReservation">Submit</button>
+            <button id="submitReservation">Rezervisi</button>
         </form>
         <section id="sedista"></section>
     </main>
     <footer>
-        <a href="./o-autoru.html">O Autoru</a>
-        <a href="./uputstvo.html">Uputstvo</a>
+        &copy; Autobuska Stanica Novi Sad
     </footer>
-    <script src="./src/code.js"></script>
+    <script src="../src/code.js"></script>
 </body>
 
 </html>

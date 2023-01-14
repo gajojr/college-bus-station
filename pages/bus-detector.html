@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/utils.css">
+    <link rel="stylesheet" href="../styles/bus-detector-style.css">
+    <title>Bus detector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Pocetna</a></li>
+                <li><a href="./lokacija.html">Lokacija</a></li>
+                <li><a href="./red-voznje.html">Red voznje</a></li>
+                <li><a href="./o-autoru.html">Autori</a></li>
+                <li><a href="./uputstvo.html">Uputstvo</a></li>
+                <li><a href="./bus-detector.html">AI</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <label style="margin: 10px;">
+			Uploaduj sliku:
+			<input type="file" accept=".jpg, .png, .jfif" id="imgupload">
+		</label>
+        <img id="img" alt="uploaded file" style="display: none;">
+        <button style="margin: 10px;" id="check-if-truck">Proveri da li je autobus</button>
+        <div class="loader">
+
+        </div>
+    </main>
+
+    <footer>
+        &copy; Autobuska Stanica Novi Sad
+    </footer>
+
+    <!-- Load TensorFlow.js. This is required to use MobileNet. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.1">
+    </script>
+    <!-- Load the MobileNet model. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0">
+    </script>
+    <script src="../src/bus-detector.js"></script>
+</body>
+
+</html>
