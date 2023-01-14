@@ -68,7 +68,7 @@ function proveriDostupnostSedista(brojSedista) {
         return false;
     }
 
-    if (document.getElementById(brojSedista).style.backgroundColor === 'red') {
+    if (localStorage.getItem(brojSedista) !== null) {
         alert(`Sediste broj ${brojSedista} je vec zauzeto!`);
         return false;
     }
