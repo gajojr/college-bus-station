@@ -16,7 +16,7 @@ document.getElementById('check-if-truck').addEventListener('click', () => {
     document.querySelector('.loader').style.display = 'block';
 
     mobilenet.load().then(model => {
-        // Classify the image.
+        // Classify the image
         model.classify(img).then(predictions => {
             let busDetected = 'Nije ';
             for (const prediction of predictions) {
